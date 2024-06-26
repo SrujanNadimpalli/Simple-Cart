@@ -1,4 +1,26 @@
-# Getting Started with Create React App
+Imports:
+React, useState, and useEffect are from the React library, used for creating components and managing state and side effects in functional components.
+BrowserRouter, Route, Routes, and Link are from react-router-dom, used for handling routing in the application.
+ItemList and Cart are imported from local files ('./ItemList' and './Cart'), representing components that display a list of items and the shopping cart.
+Component Definition:
+App is a functional component defined using const.
+State Management:
+useState hooks are used to declare and manage state variables:
+items: manages the list of items with their quantities.
+cart: manages items added to the shopping cart.
+newItem: manages the input value for adding new items.
+currentTime: manages the current time, initialized with the current date.
+showPopup: manages the visibility of the "order successful" popup.
+Side Effects:
+useEffect is used to perform side effects in functional components. Here, it sets up a timer that updates currentTime every second (1000 milliseconds).
+setInterval is used to execute the timer logic.
+The cleanup function returned from useEffect clears the timer interval when the component unmounts ([] dependency array ensures it runs only once on mount).
+Routing:
+The Router component from react-router-dom provides routing capabilities for the application.
+Link components are used to navigate between different routes ('/' for items and '/cart' for the cart).
+Routes and Route components define the paths and corresponding components (ItemList and Cart) to render based on the current URL.
+Props:
+Props are passed to ItemList and Cart components to provide them with necessary data (items, newItem, cart) and functions (handleInputChange, handleAddItem, etc.).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
