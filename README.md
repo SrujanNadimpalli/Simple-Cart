@@ -22,6 +22,15 @@ Routes and Route components define the paths and corresponding components (ItemL
 Props:
 Props are passed to ItemList and Cart components to provide them with necessary data (items, newItem, cart) and functions (handleInputChange, handleAddItem, etc.).
 
+#output
+
+![sum1](https://github.com/SrujanNadimpalli/Simple-Cart/assets/127650135/cca5221c-720b-4aa5-83ea-3bfaefc9273f)
+
+![sum2](https://github.com/SrujanNadimpalli/Simple-Cart/assets/127650135/cf34067f-4791-4499-9fff-b0d747730573)
+
+
+![sum3](https://github.com/SrujanNadimpalli/Simple-Cart/assets/127650135/5240b28f-ff13-47ee-acc1-396dcd12e2a4)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
