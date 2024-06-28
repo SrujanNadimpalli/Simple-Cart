@@ -1,26 +1,53 @@
-Imports:
-React, useState, and useEffect are from the React library, used for creating components and managing state and side effects in functional components.
-BrowserRouter, Route, Routes, and Link are from react-router-dom, used for handling routing in the application.
-ItemList and Cart are imported from local files ('./ItemList' and './Cart'), representing components that display a list of items and the shopping cart.
-Component Definition:
-App is a functional component defined using const.
-State Management:
-useState hooks are used to declare and manage state variables:
-items: manages the list of items with their quantities.
-cart: manages items added to the shopping cart.
-newItem: manages the input value for adding new items.
-currentTime: manages the current time, initialized with the current date.
-showPopup: manages the visibility of the "order successful" popup.
-Side Effects:
-useEffect is used to perform side effects in functional components. Here, it sets up a timer that updates currentTime every second (1000 milliseconds).
-setInterval is used to execute the timer logic.
-The cleanup function returned from useEffect clears the timer interval when the component unmounts ([] dependency array ensures it runs only once on mount).
-Routing:
-The Router component from react-router-dom provides routing capabilities for the application.
-Link components are used to navigate between different routes ('/' for items and '/cart' for the cart).
-Routes and Route components define the paths and corresponding components (ItemList and Cart) to render based on the current URL.
-Props:
-Props are passed to ItemList and Cart components to provide them with necessary data (items, newItem, cart) and functions (handleInputChange, handleAddItem, etc.).
+This is a simple shopping cart application built with React and React Router. The application allows users to manage a list of items, add items to a cart, and simulate a purchase.<br>
+
+USAGE:<br>
+
+Navigate to the home page to see the list of items.<br>
+Add a new item using the input field and "Add Item" button.<br>
+Increase or decrease the quantity of an item using the "+" and "-" buttons.<br>
+Add an item to the cart using the "Add to Cart" button.<br>
+Navigate to the cart to see the items added.<br>
+Remove items from the cart using the "Delete" button.<br>
+Simulate a purchase by clicking the "Buy Items" button, which will show a popup and then clear the cart.<br>
+
+COMPONENTS:<br>
+
+APP:<br>
+The main component of the application. It maintains the state for items, cart, and other functionalities. It uses React Router to navigate between the ItemList and Cart components.<br>
+
+ITEMLIST:<br>
+Displays the list of items and allows the user to add new items, increase/decrease quantity, add to cart, and delete items.<br>
+
+CART:<br>
+Displays the items added to the cart and allows the user to remove items or simulate a purchase.<br>
+
+IMPORTS:<br>
+React, useState, and useEffect are from the React library, used for creating components and managing state and side effects in functional components.<br>
+BrowserRouter, Route, Routes, and Link are from react-router-dom, used for handling routing in the application.<br>
+ItemList and Cart are imported from local files ('./ItemList' and './Cart'), representing components that display a list of items and the shopping cart.<br>
+Component Definition:<br>
+App is a functional component defined using const.<br>
+
+STATE MANAGEMENT:<br>
+useState hooks are used to declare and manage state variables:<br>
+items: manages the list of items with their quantities.<br>
+cart: manages items added to the shopping cart.<br>
+newItem: manages the input value for adding new items.<br>
+currentTime: manages the current time, initialized with the current date.<br>
+showPopup: manages the visibility of the "order successful" popup.<br>
+
+SIDE EFFECTS:<br>
+useEffect is used to perform side effects in functional components. Here, it sets up a timer that updates currentTime every second (1000 milliseconds).<br>
+setInterval is used to execute the timer logic.<br>
+The cleanup function returned from useEffect clears the timer interval when the component unmounts ([] dependency array ensures it runs only once on mount).<br>
+
+ROUTING:<br>
+The Router component from react-router-dom provides routing capabilities for the application.<br>
+Link components are used to navigate between different routes ('/' for items and '/cart' for the cart).<br>
+Routes and Route components define the paths and corresponding components (ItemList and Cart) to render based on the current URL.<br>
+
+PROPS:<br>
+Props are passed to ItemList and Cart components to provide them with necessary data (items, newItem, cart) and functions (handleInputChange, handleAddItem, etc.).<br>
 
 #output
 
