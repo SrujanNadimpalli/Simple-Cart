@@ -51,6 +51,12 @@ Props are passed to ItemList and Cart components to provide them with necessary 
 
 #output
 
+
+https://github.com/SrujanNadimpalli/Simple-Cart/assets/127650135/a16743de-c8c9-4f3e-bef8-9fb9dc0b7652
+
+
+
+
 ![sum1](https://github.com/SrujanNadimpalli/Simple-Cart/assets/127650135/cca5221c-720b-4aa5-83ea-3bfaefc9273f)
 
 ![sum2](https://github.com/SrujanNadimpalli/Simple-Cart/assets/127650135/cf34067f-4791-4499-9fff-b0d747730573)
